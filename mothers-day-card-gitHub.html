@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Mother's Day 💐</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #f5ede8;
+    background-image: radial-gradient(ellipse at 20% 20%, #fde0d0 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 80%, #e8d5f0 0%, transparent 60%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: #fffaf6;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 12px 60px rgba(180,100,80,0.2), 0 2px 10px rgba(180,100,80,0.08);
+    animation: fadeUp 0.8s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .art-panel {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .art-panel svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .petals-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 5;
+  }
+
+  .petal {
+    position: absolute;
+    opacity: 0;
+    animation: fall linear infinite;
+    border-radius: 50% 50% 50% 0;
+  }
+
+  @keyframes fall {
+    0%   { transform: translateY(-30px) rotate(0deg); opacity: 0.85; }
+    100% { transform: translateY(300px) rotate(400deg); opacity: 0; }
+  }
+
+  .music-btn {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    background: rgba(255,255,255,0.88);
+    border: 1px solid rgba(200,130,110,0.25);
+    border-radius: 50px;
+    padding: 8px 16px 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    color: #7a3e2f;
+    cursor: pointer;
+    z-index: 10;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none;
+  }
+  .music-btn:hover { background: #fff; transform: scale(1.04); }
+  .music-btn .note { font-size: 16px; animation: pulse 1.8s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+
+  .body {
+    padding: 30px 32px 36px;
+    text-align: center;
+  }
+
+  .tag {
+    font-size: 10.5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c4856a;
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  .title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 44px;
+    color: #7a2e2e;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .divider-line { flex: 1; max-width: 60px; height: 1px; background: linear-gradient(to right, transparent, #e5c4b0, transparent); }
+  .divider-flower { font-size: 16px; color: #c4856a; }
+
+  .message {
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: #5a3a2e;
+    margin-bottom: 24px;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  .message em {
+    font-style: italic;
+    color: #a04040;
+    font-weight: 400;
+  }
+
+  .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #a04040;
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+
+  .footer-tag {
+    font-size: 11px;
+    color: #c4a090;
+    margin-top: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="art-panel">
+    <svg viewBox="0 0 420 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <rect width="420" height="280" fill="#fde8d8"/>
+      <!-- Painterly sky -->
+      <ellipse cx="70" cy="44" rx="60" ry="24" fill="#fff0e8" opacity="0.7"/>
+      <ellipse cx="115" cy="38" rx="44" ry="20" fill="#ffddd0" opacity="0.6"/>
+      <ellipse cx="330" cy="54" rx="66" ry="22" fill="#fff0e8" opacity="0.6"/>
+      <ellipse cx="375" cy="48" rx="42" ry="16" fill="#ffddd0" opacity="0.5"/>
+      <!-- Sun -->
+      <circle cx="210" cy="58" r="42" fill="#ffe4b0" opacity="0.45"/>
+      <circle cx="210" cy="58" r="27" fill="#ffcf7a" opacity="0.55"/>
+      <circle cx="210" cy="58" r="15" fill="#ffb84d" opacity="0.65"/>
+      <!-- Ground -->
+      <ellipse cx="210" cy="240" rx="260" ry="85" fill="#d4e8a0" opacity="0.5"/>
+      <rect x="0" y="218" width="420" height="62" fill="#c8df90" opacity="0.4"/>
+      <!-- Grass blades -->
+      <path d="M30,218 Q28,190 35,178 Q37,190 33,218" fill="#7ab050" opacity="0.7"/>
+      <path d="M50,218 Q55,185 60,172 Q63,185 57,218" fill="#8fc460" opacity="0.7"/>
+      <path d="M370,218 Q368,188 375,175 Q378,188 373,218" fill="#7ab050" opacity="0.7"/>
+      <path d="M388,218 Q393,194 397,180 Q400,194 394,218" fill="#8fc460" opacity="0.65"/>
+      <path d="M18,218 Q20,198 16,185 Q14,198 17,218" fill="#6aa040" opacity="0.6"/>
+      <!-- Stems -->
+      <line x1="128" y1="218" x2="128" y2="152" stroke="#5a8c30" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="162" y1="218" x2="162" y2="140" stroke="#5a8c30" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="196" y1="218" x2="196" y2="126" stroke="#5a8c30" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="230" y1="218" x2="230" y2="133" stroke="#5a8c30" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="264" y1="218" x2="264" y2="143" stroke="#5a8c30" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="295" y1="218" x2="295" y2="154" stroke="#5a8c30" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Leaves -->
+      <path d="M128,190 Q115,176 119,163 Q128,174 128,190" fill="#6ab040" opacity="0.85"/>
+      <path d="M162,183 Q149,168 153,155 Q162,168 162,183" fill="#6ab040" opacity="0.85"/>
+      <path d="M196,170 Q210,156 206,142 Q196,156 196,170" fill="#6ab040" opacity="0.85"/>
+      <path d="M230,175 Q244,161 240,148 Q230,161 230,175" fill="#6ab040" opacity="0.85"/>
+      <path d="M264,182 Q251,168 255,155 Q264,168 264,182" fill="#6ab040" opacity="0.85"/>
+      <path d="M295,190 Q308,176 304,163 Q295,176 295,190" fill="#6ab040" opacity="0.85"/>
+      <!-- Tulip 1 coral -->
+      <path d="M128,152 Q117,136 119,117 Q128,129 128,152" fill="#e85c5c" opacity="0.9"/>
+      <path d="M128,152 Q139,136 137,117 Q128,129 128,152" fill="#c74040" opacity="0.9"/>
+      <ellipse cx="128" cy="117" rx="9" ry="11" fill="#e85c5c" opacity="0.85"/>
+      <!-- Tulip 2 pink -->
+      <path d="M162,140 Q151,123 153,103 Q162,115 162,140" fill="#e87ab0" opacity="0.9"/>
+      <path d="M162,140 Q173,123 171,103 Q162,115 162,140" fill="#c45890" opacity="0.9"/>
+      <ellipse cx="162" cy="103" rx="9" ry="11" fill="#e87ab0" opacity="0.85"/>
+      <!-- Tulip 3 lavender tall -->
+      <path d="M196,126 Q183,107 186,85 Q196,98 196,126" fill="#b890e0" opacity="0.9"/>
+      <path d="M196,126 Q209,107 206,85 Q196,98 196,126" fill="#9068c0" opacity="0.9"/>
+      <ellipse cx="196" cy="85" rx="10" ry="12" fill="#b890e0" opacity="0.9"/>
+      <!-- Tulip 4 yellow -->
+      <path d="M230,133 Q219,115 221,96 Q230,108 230,133" fill="#f0c840" opacity="0.9"/>
+      <path d="M230,133 Q241,115 239,96 Q230,108 230,133" fill="#d0a820" opacity="0.9"/>
+      <ellipse cx="230" cy="96" rx="9" ry="11" fill="#f0c840" opacity="0.85"/>
+      <!-- Tulip 5 orange -->
+      <path d="M264,143 Q253,127 255,108 Q264,120 264,143" fill="#f07840" opacity="0.9"/>
+      <path d="M264,143 Q275,127 273,108 Q264,120 264,143" fill="#d05820" opacity="0.9"/>
+      <ellipse cx="264" cy="108" rx="9" ry="11" fill="#f07840" opacity="0.85"/>
+      <!-- Tulip 6 rose -->
+      <path d="M295,154 Q284,138 286,119 Q295,131 295,154" fill="#e05880" opacity="0.9"/>
+      <path d="M295,154 Q306,138 304,119 Q295,131 295,154" fill="#c03860" opacity="0.9"/>
+      <ellipse cx="295" cy="119" rx="9" ry="11" fill="#e05880" opacity="0.85"/>
+      <!-- Wildflowers -->
+      <circle cx="88" cy="208" r="6" fill="#f8d060" opacity="0.85"/>
+      <circle cx="88" cy="208" r="3.5" fill="#e8a020" opacity="0.9"/>
+      <circle cx="335" cy="206" r="6" fill="#f8d060" opacity="0.85"/>
+      <circle cx="335" cy="206" r="3.5" fill="#e8a020" opacity="0.9"/>
+      <circle cx="68" cy="214" r="5" fill="#ff9eb0" opacity="0.8"/>
+      <circle cx="355" cy="211" r="5" fill="#ff9eb0" opacity="0.8"/>
+      <!-- Butterfly -->
+      <g transform="translate(348, 100) rotate(-15)">
+        <ellipse cx="-11" cy="0" rx="14" ry="10" fill="#e87ab0" opacity="0.75"/>
+        <ellipse cx="11" cy="0" rx="14" ry="10" fill="#e87ab0" opacity="0.75"/>
+        <ellipse cx="-9" cy="6" rx="9" ry="7" fill="#c45890" opacity="0.7"/>
+        <ellipse cx="9" cy="6" rx="9" ry="7" fill="#c45890" opacity="0.7"/>
+        <line x1="0" y1="-5" x2="0" y2="11" stroke="#5a3020" stroke-width="1.5"/>
+        <path d="M0,-5 Q-6,-14 -9,-16" stroke="#5a3020" stroke-width="1.2" fill="none"/>
+        <path d="M0,-5 Q6,-14 9,-16" stroke="#5a3020" stroke-width="1.2" fill="none"/>
+      </g>
+      <!-- Second small butterfly -->
+      <g transform="translate(75, 130) rotate(10)">
+        <ellipse cx="-7" cy="0" rx="9" ry="6" fill="#f0c840" opacity="0.7"/>
+        <ellipse cx="7" cy="0" rx="9" ry="6" fill="#f0c840" opacity="0.7"/>
+        <ellipse cx="-5" cy="4" rx="5" ry="4" fill="#d0a820" opacity="0.65"/>
+        <ellipse cx="5" cy="4" rx="5" ry="4" fill="#d0a820" opacity="0.65"/>
+        <line x1="0" y1="-3" x2="0" y2="7" stroke="#5a3020" stroke-width="1"/>
+      </g>
+    </svg>
+    <div class="petals-container" id="petals"></div>
+    <a class="music-btn" href="https://www.youtube.com/watch?v=3jL4S4X97sQ&list=RD3jL4S4X97sQ&start_radio=1" target="_blank" rel="noopener">
+      <span class="note">♪</span>
+      <span>Vienna — Billy Joel</span>
+    </a>
+  </div>
+
+  <div class="body">
+    <p class="tag">Happy Mother's Day</p>
+    <div class="title">For You, Mom</div>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <span class="divider-flower">✿</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <p class="message">
+      You've always known when to slow down and when to let me grow — just like the song says,
+      <em>"Slow down, you're doing fine."</em>
+      <br><br>
+      I love you so much, Mom. I'm really sad I don't get to spend the day with you in person,
+      but I hope you know how much you mean to me every single day.
+      <br><br>
+      Thank you for always being there for me, for loving me the way you do, and for making me
+      who I am. I'm lucky to be your son.
+    </p>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <span class="divider-flower">✿</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <p class="signature">With all my love,<br>Joshua ♡</p>
+    <p class="footer-tag">Your son, always</p>
+  </div>
+</div>
+
+<script>
+  const container = document.getElementById('petals');
+  const colors = ['#e85c5c','#e87ab0','#b890e0','#f0c840','#f07840','#e05880','#ff9eb0','#ffb8c8'];
+  for (let i = 0; i < 22; i++) {
+    const p = document.createElement('div');
+    p.className = 'petal';
+    const size = 7 + Math.random() * 8;
+    p.style.cssText = [
+      `left:${Math.random()*100}%`,
+      `background:${colors[Math.floor(Math.random()*colors.length)]}`,
+      `width:${size}px`,
+      `height:${size*1.5}px`,
+      `animation-delay:${(Math.random()*7).toFixed(2)}s`,
+      `animation-duration:${(4+Math.random()*5).toFixed(2)}s`,
+      `transform:rotate(${Math.floor(Math.random()*360)}deg)`
+    ].join(';');
+    container.appendChild(p);
+  }
+</script>
+</body>
+</html>
